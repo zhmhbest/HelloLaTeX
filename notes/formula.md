@@ -75,19 +75,16 @@
 - $∵$、$∴$
 - $⇔$、$⇐$、$⇒$
 - $⇎$、$⇍$、$⇏$
-- $=$、$≠$
+- $=$、$≠$、$≈$
 - $<$、$>$、$≤$、$≥$、$≮ $、$≯ $
-- 约等: $≈$、$≒$
 - 全等: $≌$
 - 相似: $∽$
 - 恒等: $≡$
-- 异或: $⊕$、$⊻$
 - 成比例: $∷$
 - 成正比例: $∝$
 
 ### 集合
 
-- $\emptyset$、$\empty$、$∅$
 - $∪$、$∩$
 - $∈$
 - $⊂$、$⊃$
@@ -95,23 +92,57 @@
 - $⊆$、$⫅$、$⊊$、$⫋$
 - $⊇$、$⫆$、$⊋$、$⫌$
 
+| 效果 | 代码 |
+| :-: | :- |
+| $∅$ | `\emptyset`、`\empty` |
+| $\bigcap_1^{n} p$ | `\bigcap_1^{n} p` |
+| $\bigcup_1^{k} p$ | `\bigcup_1^{k} p` |
+
 ### 箭头
 
-- $←$、$↑$、$→$、$↓$ 
-- $↖$、$↗$、$↘$、$↙$
-- $↔$、$↕$
-- $\overset{p}{→}$
+||||
+| :-: | :-: | :-: |
+|     | $⇡$ |
+| $⇠$ | $↕$ | $⇢$
+|     | $⇣$ |
+
+||||
+| :-: | :-: | :-: |
+| $↖$ | $↑$ | $↗$
+| $←$ | $↔$ | $→$
+| $↙$ | $↓$ | $↘$
+
+||||
+| :-: | :-: | :-: |
+| $⇖$ | $⇑$ | $⇗$
+| $⇐$ | $⇔$ | $⇒$
+| $⇙$ | $⇓$ | $⇘$
+
+||||
+| :-: | :-: | :-: |
+| $⇍$ | $⇎$ | $⇏$
+
+||||
+| :-: | :-: | :-: |
+|     | $⇈$ |
+| $⇇$ | $⇅$ | $⇉$
+|     | $⇊$ |
+
+|||
+| :-: | :-: |
+| $⇆$ | $⇄$ |
+| $⇋$ | $⇌$ |
 
 | 效果 | 代码 |
 | :-: | :- |
-| $\overset{p}{→}$  | `\overset{p}{→}`
-| $\underset{p}{→}$ | `\underset{p}{→}`
-| $\xleftarrow[Down]{Up}$  | `\xleftarrow[Down]{Up}`
-| $\xrightarrow[Down]{Up}$ | `\xrightarrow[Down]{Up}`
-| $\xLeftarrow[Down]{Up}$  | `\xLeftarrow[Down]{Up}`
-| $\xRightarrow[Down]{Up}$ | `\xRightarrow[Down]{Up}`
-| $\xleftrightarrow[Down]{Up}$ | `\xleftrightarrow[Down]{Up}`
-| $\xLeftrightarrow[Down]{Up}$ | `\xLeftrightarrow[Down]{Up}`
+| $$\overset{p}{→}$$  | `\overset{p}{→}`
+| $$\underset{p}{→}$$ | `\underset{p}{→}`
+| $$\xleftarrow[Down]{Up}$$  | `\xleftarrow[Down]{Up}`
+| $$\xrightarrow[Down]{Up}$$ | `\xrightarrow[Down]{Up}`
+| $$\xLeftarrow[Down]{Up}$$  | `\xLeftarrow[Down]{Up}`
+| $$\xRightarrow[Down]{Up}$$ | `\xRightarrow[Down]{Up}`
+| $$\xleftrightarrow[Down]{Up}$$ | `\xleftrightarrow[Down]{Up}`
+| $$\xLeftrightarrow[Down]{Up}$$ | `\xLeftrightarrow[Down]{Up}`
 
 ### 几何
 
@@ -132,6 +163,7 @@
 
 | 效果 | 代码 |
 | :-: | :- |
+| $\times$ | `\times`
 | $\centerdot$ | `\centerdot`
 | $\cdot$      | `\cdot`
 | $\circ$   | `\circ`
@@ -175,43 +207,43 @@
 
 | 效果 | 代码 |
 | :-: | :- |
-| $\sqrt{2}$    | `\sqrt{2}`
-| $\sqrt[3]{2}$ | `\sqrt[3]{2}`
+| $$\sqrt{2}$$    | `\sqrt{2}`
+| $$\sqrt[3]{2}$$ | `\sqrt[3]{2}`
 
 ### 极限
 
 | 效果 | 代码 |
 | :- | :- |
-| $\lim_{x→+∞} {f(x)} = $          | `\lim_{x→+∞} {f(x)} = `
-| $\lim\limits_{x→+∞} {f(x)} = $   | `\lim\limits_{x→+∞} {f(x)} = `
-| $\lim\nolimits_{x→+∞} {f(x)} = $ | `\lim\nolimits_{x→+∞} {f(x)} = `
+| $$\lim\limits_{x→+∞} {f(x)} = $$   | `\lim\limits_{x→+∞} {f(x)} = `
+| $$\lim\nolimits_{x→+∞} {f(x)} = $$ | `\lim\nolimits_{x→+∞} {f(x)} = `
 
-### 连加
-
-| 效果 | 代码 |
-| :-: | :- |
-| $\sum$ | `\sum`
-| $\sum\limits_{i=1}^{n} x_i=$   | `\sum\limits_{i=1}^{n} x_i=`
-| $\sum\nolimits_{i=1}^{n} x_i=$ | `\sum\nolimits_{i=1}^{n} x_i=`
-
-### 连乘
+### 级数
 
 | 效果 | 代码 |
 | :-: | :- |
-| $\prod$ | `\prod`
-| $\coprod$ | `\coprod`
-| $\prod\limits_{i=1}^{n} x_i=$   | `\prod\limits_{i=1}^{n} x_i=`
-| $\prod\nolimits_{i=1}^{n} x_i=$ | `\prod\nolimits_{i=1}^{n} x_i=`
+| $$\sum$$ | `\sum`
+| $$\sum\limits_{i=1}^{n} x_i=$$   | `\sum\limits_{i=1}^{n} x_i=`
+| $$\sum\nolimits_{i=1}^{n} x_i=$$ | `\sum\nolimits_{i=1}^{n} x_i=`
+
+### 乘积
+
+| 效果 | 代码 |
+| :-: | :- |
+| $$\prod$$ | `\prod`
+| $$\coprod$$ | `\coprod`
+| $$\prod\limits_{i=1}^{n} x_i=$$   | `\prod\limits_{i=1}^{n} x_i=`
+| $$\prod\nolimits_{i=1}^{n} x_i=$$ | `\prod\nolimits_{i=1}^{n} x_i=`
 
 ### 积分
 
 | 效果 | 代码 |
 | :-: | :- |
-| $∫$ | `∫`、`\int`
-| $∬$ | `∬`
-| $∮$ | `∮`、`\oint`
-| $\int\limits_{0}^{1} f(x) \rm{d}x = $   | `\int\limits_{0}^{1} f(x) \rm{d}x = `
-| $\int\nolimits_{0}^{1} f(x) \rm{d}x = $ | `\int\nolimits_{0}^{1} f(x) \rm{d}x = `
+| $$\int$$   | `∫`、`\int`
+| $$\iint$$  | `∬`、`\iint`
+| $$\iiint$$ | `∭`、`\iiint`
+| $$\oint$$  | `∮`、`\oint`
+| $$\int\limits_{0}^{1} f(x) {\rm d}x =$$   | `\int\limits_{0}^{1} f(x) {\rm d}x = `
+| $$\int\nolimits_{0}^{1} f(x) {\rm d}x =$$ | `\int\nolimits_{0}^{1} f(x) {\rm d}x = `
 
 ### 帽子
 
@@ -244,11 +276,12 @@
 
 | 效果 | 代码 |
 | :-: | :- |
-| $C_{A}^{B}C$ | `C_{A}^{B}C`
-| $C^{A}_{B}C$ | `C^{A}_{B}C`
-| $C\overset{A}{B}C$  | `C\overset{A}{B}C`
-| $C\underset{A}{B}C$ | `C\underset{A}{B}C`
-| $C\stackrel{A}{B}C$ | `C\stackrel{A}{B}C`
+| $${}_1^2\!X_3^4$$ | `{}_1^2\!X_3^4` 
+| $$L_{A}^{B}R$$  | `L _{A}^{B} R`
+| $$L^{A}_{B}R$$  | `L ^{A}_{B} R`
+| $$L\overset{Small}{Big}R$$  | `L \overset{Small}{Big} R`
+| $$L\underset{Small}{Big}R$$ | `L \underset{Small}{Big} R`
+| $$L\stackrel{Small}{Big}R$$ | `L \stackrel{Small}{Big} R`
 
 | 效果 | 代码 |
 | :-: | :- |
@@ -258,12 +291,27 @@
 
 | 效果 | 代码 |
 | :-: | :- |
-| $\overbrace{1234567890}$  | `\overbrace{123}`
-| $\underbrace{1234567890}$ | `\underbrace{123}`
-| $\overgroup{1234567890}$  | `\overgroup{123}`
-| $\undergroup{1234567890}$ | `\undergroup{123}`
-| $\widehat{1234567890}$    | `\widehat{123}`
-| $\widetilde{1234567890}$  | `\widetilde{123}`
+| $$\overlinesegment{1234567890}$$    | `\overlinesegment{1234567890}`
+| $$\underlinesegment{1234567890}$$   | `\underlinesegment{1234567890}`
+| $$\overbrace{1234567890}$$  | `\overbrace{1234567890}`
+| $$\underbrace{1234567890}$$ | `\underbrace{1234567890}`
+| $$\overgroup{1234567890}$$  | `\overgroup{1234567890}`
+| $$\undergroup{1234567890}$$ | `\undergroup{1234567890}`
+| $$\widehat{1234567890}$$    | `\widehat{1234567890}`
+| $$\widetilde{1234567890}$$  | `\widetilde{1234567890}`
+| $$\overleftarrow{1234567890}$$   | `\overleftarrow{1234567890}`
+| $$\underleftarrow{1234567890}$$  | `\underleftarrow{1234567890}`
+| $$\overrightarrow{1234567890}$$     | `\overrightarrow{1234567890}`
+| $$\underrightarrow{1234567890}$$    | `\underrightarrow{1234567890}`
+| $$\overleftrightarrow{1234567890}$$  | `\overleftrightarrow{1234567890}`
+| $$\underleftrightarrow{1234567890}$$ | `\underleftrightarrow{1234567890}`
+| $$\overleftharpoon{1234567890}$$  | `\overleftharpoon{1234567890}`
+| $$\overrightharpoon{1234567890}$$ | `\overrightharpoon{1234567890}`
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\begin{matrix} 5050 \\ \overbrace{1+2+\cdots+100} \end{matrix}$  | `\begin{matrix} 5050 \\ \overbrace{1+2+\cdots+100} \end{matrix}`
+| $\begin{matrix} \underbrace{1+2+\cdots+100} \\ 5050 \end{matrix}$ | `\begin{matrix} \underbrace{1+2+\cdots+100} \\ 5050 \end{matrix}`
 
 ### 括号
 
@@ -399,13 +447,13 @@ $$
 
 **模型1**
 
-$
+$$
 \left[\begin{array}{c}
     0      & \cdots & 0
 \\  \vdots & \ddots & \vdots
 \\  0      & \cdots & 0
 \end{array}\right]_{m×n}
-$
+$$
 ```
 \left[\begin{array}{c}
     0      & \cdots & 0
@@ -416,14 +464,14 @@ $
 
 **模型2**
 
-$
+$$
 \left[\begin{array}{c}
     0      & 0      & \cdots & 0
 \\  0      & 0      & \cdots & 0
 \\  \vdots & \vdots & \ddots & \vdots
 \\  0      & 0      & \cdots & 0
 \end{array}\right]_{m×n}
-$
+$$
 ```
 \left[\begin{array}{c}
     0      & 0      & \cdots & 0
@@ -435,7 +483,7 @@ $
 
 **模型3**
 
-$
+$$
 \left[\begin{array}{c}
     0      & 0      & \cdots & 0      & 0
 \\  0      & 0      & \cdots & 0      & 0
@@ -443,7 +491,7 @@ $
 \\  0      & 0      & \cdots & 0      & 0
 \\  0      & 0      & \cdots & 0      & 0
 \end{array}\right]_{m×n}
-$
+$$
 ```
 \left[\begin{array}{c}
     0      & 0      & \cdots & 0      & 0
