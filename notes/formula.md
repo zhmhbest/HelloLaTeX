@@ -100,6 +100,18 @@
 - $←$、$↑$、$→$、$↓$ 
 - $↖$、$↗$、$↘$、$↙$
 - $↔$、$↕$
+- $\overset{p}{→}$
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\overset{p}{→}$  | `\overset{p}{→}`
+| $\underset{p}{→}$ | `\underset{p}{→}`
+| $\xleftarrow[Down]{Up}$  | `\xleftarrow[Down]{Up}`
+| $\xrightarrow[Down]{Up}$ | `\xrightarrow[Down]{Up}`
+| $\xLeftarrow[Down]{Up}$  | `\xLeftarrow[Down]{Up}`
+| $\xRightarrow[Down]{Up}$ | `\xRightarrow[Down]{Up}`
+| $\xleftrightarrow[Down]{Up}$ | `\xleftrightarrow[Down]{Up}`
+| $\xLeftrightarrow[Down]{Up}$ | `\xLeftrightarrow[Down]{Up}`
 
 ### 几何
 
@@ -121,18 +133,23 @@
 | 效果 | 代码 |
 | :-: | :- |
 | $\centerdot$ | `\centerdot`
-| $\cdot$ | `\cdot`
-| $\dotplus$ | `\dotplus`
-| $\divideontimes$ | `\divideontimes`
+| $\cdot$      | `\cdot`
+| $\circ$   | `\circ`
+| $\bullet$ | `\bullet`
 
 | 效果 | 代码 |
 | :-: | :- |
-| $\bigodot$ | `\bigodot`
-| $\bigoplus$ | `\bigoplus`
-| $\bigotimes$ | `\bigotimes`
 | $\circleddash$ | `\circleddash`
 | $\circledcirc$ | `\circledcirc`
-| $\circledast$ | `\circledast`
+| $\circledast$  | `\circledast`
+| $\oslash$ | `\oslash`
+| $\odot$   | `\odot`
+| $\oplus$  | `\oplus`
+| $\otimes$ | `\otimes`
+| $\bigcirc$   | `\bigcirc`
+| $\bigodot$   | `\bigodot`
+| $\bigoplus$  | `\bigoplus`
+| $\bigotimes$ | `\bigotimes`
 
 | 效果 | 代码 |
 | :-: | :- |
@@ -142,22 +159,10 @@
 
 | 效果 | 代码 |
 | :-: | :- |
-| $\ltimes$ | `\ltimes`
-| $\rtimes$ | `\rtimes`
-
-| 效果 | 代码 |
-| :-: | :- |
 | $\dots$ | `\dots`
 | $\cdots$ | `\cdots`
 | $\vdots$ | `\vdots`
 | $\ddots$ | `\ddots`
-
-### 排列组合
-
-| 效果 | 代码 |
-| :-: | :- |
-| $C_{n}^{k}$ | `C_{n}^{k}`
-| $C^{k}_{n}$ | `C^{k}_{n}`
 
 ### 分号
 
@@ -234,6 +239,31 @@
 | :-: | :- |
 | $\grave{a}$ | `\grave{a}`
 | $\acute{a}$ | `\acute{a}`
+
+### 上下
+
+| 效果 | 代码 |
+| :-: | :- |
+| $C_{A}^{B}C$ | `C_{A}^{B}C`
+| $C^{A}_{B}C$ | `C^{A}_{B}C`
+| $C\overset{A}{B}C$  | `C\overset{A}{B}C`
+| $C\underset{A}{B}C$ | `C\underset{A}{B}C`
+| $C\stackrel{A}{B}C$ | `C\stackrel{A}{B}C`
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\over{123}$      | `\over{123}`
+| $\overline{123}$  | `\overline{123}`
+| $\underline{123}$ | `\underline{123}`
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\overbrace{1234567890}$  | `\overbrace{123}`
+| $\underbrace{1234567890}$ | `\underbrace{123}`
+| $\overgroup{1234567890}$  | `\overgroup{123}`
+| $\undergroup{1234567890}$ | `\undergroup{123}`
+| $\widehat{1234567890}$    | `\widehat{123}`
+| $\widetilde{1234567890}$  | `\widetilde{123}`
 
 ### 括号
 
