@@ -53,7 +53,7 @@
 | $\gimel$   | `\gimel`
 | $\daleth$  | `\daleth`
 
-| 字母 | 英文 |
+| 效果 | 代码 |
 | :-: | :-: |
 | $\partial$ | `\partial`
 | $\hbar$    | `\hbar`
