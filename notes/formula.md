@@ -330,7 +330,7 @@
 | :-: | :- |
 | $$\left( \dfrac{a}{b} \right)$$   | `\left( \dfrac{a}{b} \right)`
 | $$\left[ \dfrac{a}{b} \right]$$   | `\left[ \dfrac{a}{b} \right]`
-| $$\left\{ \dfrac{a}{b} \right\}$$ | `\left\{ \dfrac{a}{b} \right\}$`
+| $$\left\{ \dfrac{a}{b} \right\}$$ | `\left\{ \dfrac{a}{b} \right\}`
 | $$\left< \dfrac{a}{b} \right>$$   | `\left< \dfrac{a}{b} \right>`
 | $$\left\langle \dfrac{a}{b} \right\rangle$$   | `\left\langle \dfrac{a}{b} \right\rangle`
 
