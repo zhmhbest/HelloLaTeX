@@ -192,6 +192,7 @@
 | 效果 | 代码 |
 | :-: | :- |
 | $\dots$ | `\dots`
+| $\ldots$ | `\ldots`
 | $\cdots$ | `\cdots`
 | $\vdots$ | `\vdots`
 | $\ddots$ | `\ddots`
@@ -276,7 +277,7 @@
 
 | 效果 | 代码 |
 | :-: | :- |
-| $${}_1^2\!X_3^4$$ | `{}_1^2\!X_3^4` 
+| $${}_1^2\!X_3^4$$ | `{}_1^2\!X_3^4`
 | $$L_{A}^{B}R$$  | `L _{A}^{B} R`
 | $$L^{A}_{B}R$$  | `L ^{A}_{B} R`
 | $$L\overset{Small}{Big}R$$  | `L \overset{Small}{Big} R`
