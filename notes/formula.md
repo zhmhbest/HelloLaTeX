@@ -67,7 +67,31 @@
 | $\eth$     | `\eth`
 | $\mho$     | `\mho`
 
-
+- mathrm
+  - $\mathrm{abcdefghijklmnopqrstuvwxyz}$
+  - $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+- mathit
+  - $\mathit{abcdefghijklmnopqrstuvwxyz}$
+  - $\mathit{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+- mathscr
+  - $\mathscr{abcdefghijklmnopqrstuvwxyz}$
+  - $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+- mathcal
+  - $\mathcal{abcdefghijklmnopqrstuvwxyz}$
+  - $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+- mathfrak
+  - $\mathfrak{abcdefghijklmnopqrstuvwxyz}$
+  - $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+- mathbb
+  - $\mathbb{abcdefghijklmnopqrstuvwxyz}$
+  - $\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+- mathtt
+  - $\mathtt{abcdefghijklmnopqrstuvwxyz}$
+  - $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+- mathsf
+  - $\mathsf{abcdefghijklmnopqrstuvwxyz}$
+  - $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+  
 ### 逻辑
 
 - $∃$、$∀$
