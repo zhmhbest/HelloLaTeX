@@ -67,60 +67,53 @@
 | $\eth$     | `\eth`
 | $\mho$     | `\mho`
 
-- mathrm
-  - $\mathrm{abcdefghijklmnopqrstuvwxyz}$
-  - $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-- mathit
-  - $\mathit{abcdefghijklmnopqrstuvwxyz}$
-  - $\mathit{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-- mathscr
-  - $\mathscr{abcdefghijklmnopqrstuvwxyz}$
-  - $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-- mathcal
-  - $\mathcal{abcdefghijklmnopqrstuvwxyz}$
-  - $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-- mathfrak
-  - $\mathfrak{abcdefghijklmnopqrstuvwxyz}$
-  - $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-- mathbb
-  - $\mathbb{abcdefghijklmnopqrstuvwxyz}$
-  - $\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-- mathtt
-  - $\mathtt{abcdefghijklmnopqrstuvwxyz}$
-  - $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-- mathsf
-  - $\mathsf{abcdefghijklmnopqrstuvwxyz}$
-  - $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+| 代码 | 小写 | 大写
+| - | - | - |
+| `mathrm{...}` | $\mathrm{abcdefghijklmnopqrstuvwxyz}$ | $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+| `mathit{...}` | $\mathit{abcdefghijklmnopqrstuvwxyz}$ | $\mathit{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+| `mathscr{...}` | $\mathscr{abcdefghijklmnopqrstuvwxyz}$ | $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+| `mathcal{...}` | $\mathcal{abcdefghijklmnopqrstuvwxyz}$ | $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+| `mathfrak{...}` | $\mathfrak{abcdefghijklmnopqrstuvwxyz}$ | $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+| `mathbb{...}` | $\mathbb{abcdefghijklmnopqrstuvwxyz}$ | $\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+| `mathtt{...}` | $\mathtt{abcdefghijklmnopqrstuvwxyz}$ | $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+| `mathsf{...}` | $\mathsf{abcdefghijklmnopqrstuvwxyz}$ | $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
   
 ### 逻辑
 
-- $∃$、$∀$
-- $∧$、$∨$、$￢$
-- $∵$、$∴$
-- $⇔$、$⇐$、$⇒$
-- $⇎$、$⇍$、$⇏$
-- $=$、$≠$、$≈$
-- $<$、$>$、$≤$、$≥$、$≮ $、$≯ $
-- 全等: $≌$
-- 相似: $∽$
-- 恒等: $≡$
-- 成比例: $∷$
-- 成正比例: $∝$
+| 代码 | 效果 | 说明
+| - | - | - |
+| `∃`、`∀`        | $∃$、$∀$
+| `∧`、`∨`、`￢` | $∧$、$∨$、$￢$
+| `∵`、`∴`      | $∵$、$∴$
+| `⇔`、`⇐`、`⇒` | $⇔$、$⇐$、$⇒$
+| `⇎`、`⇍`、`⇏` | $⇎$、$⇍$、$⇏$
+| `=`、`≠`、`≈` | $=$、$≠$、$≈$
+| `<`、`>` | $<$、$>$
+| `≤`、`≥` | $≤$、$≥$
+| `≮ `、`≯ ` | $≮ $、$≯ $
+| `∃`、`∀`        | $∃$、$∀$
+| `≌` | $≌$ | 全等
+| `∽` | $∽$ | 相似
+| `≡` | $≡$ | 恒等
+| `∷` | $∷$ | 成比例
+| `∝` | $∝$ | 成正比例
 
 ### 集合
 
-- $∪$、$∩$
-- $∈$、$∉$
-- $⊂$、$⊃$
-- $⊏$、$⊐$
-- $⊆$、$⫅$、$⊊$、$⫋$
-- $⊇$、$⫆$、$⊋$、$⫌$
+| 代码 | 效果 |
+| - | - |
+| `∩`、`∪` | $∩$、$∪$
+| `∈`、`∉` | $∈$、$∉$
+| `⊂`、`⊃` | $⊂$、$⊃$
+| `⊏`、`⊐` | $⊏$、$⊐$
+| `⊆`、`⫅`、`⊊`、`⫋` | $⊆$、$⫅$、$⊊$、$⫋$
+| `⊇`、`⫆`、`⊋`、`⫌` | $⊇$、$⫆$、$⊋$、$⫌$
 
 | 效果 | 代码 |
 | :-: | :- |
-| $∅$ | `\emptyset`、`\empty` |
-| $\bigcap_1^{n} p$ | `\bigcap_1^{n} p` |
-| $\bigcup_1^{k} p$ | `\bigcup_1^{k} p` |
+| $∅$ | `\emptyset`、`\empty`、`∅` |
+| $$\bigcap_1^{n} p$$ | `\bigcap_1^{n} p` |
+| $$\bigcup_1^{k} p$$ | `\bigcup_1^{k} p` |
 
 ### 箭头
 
@@ -141,6 +134,12 @@
 | $⇖$ | $⇑$ | $⇗$
 | $⇐$ | $⇔$ | $⇒$
 | $⇙$ | $⇓$ | $⇘$
+
+|||
+|-|-|
+| `{ \ \ \ ⇔ \ \ \ }` | 【${ \ \ \ ⇔ \ \ \ }$】
+| `{ \ \ \ ⇒ \ \ \ }` | 【${ \ \ \ ⇒ \ \ \ }$】
+| `{ \ \ \ ⇐ \ \ \ }` | 【${ \ \ \ ⇐ \ \ \ }$】
 
 ||||
 | :-: | :-: | :-: |
@@ -170,18 +169,18 @@
 
 ### 几何
 
-| 效果 | 含义 |
-| :-: | :- |
-| $⊙$ | 圆
-| $⌒$ | 弧
-| $△$ | 三角形
-| $□$ | 正方形
-| $◊$ | 菱形
-| $∠$ | 角
-| $∡$ | 角
-| $⊥$ | 垂直
-| $⊤$ |
-| $‖$ | 平行
+| 代码 | 效果 | 含义 |
+| :-: | :-: | :- |
+| `⊙` | $⊙$ | 圆
+| `⌒` | $⌒$ | 弧
+| `△` | $△$ | 三角形
+| `□` | $□$ | 正方形
+| `◊` | $◊$ | 菱形
+| `∠` | $∠$ | 角
+| `∡` | $∡$ | 角
+| `⊥` | $⊥$ | 垂直
+| `⊤` | $⊤$ |
+| `‖` | $‖$ | 平行
 
 ### 点
 
