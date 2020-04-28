@@ -174,11 +174,12 @@
 | $⊙$ | `⊙` | 圆
 | $⌒$ | `⌒` | 弧
 | $△$ | `△` | 三角形
+| $▽$ | `▽` | 梯度
 | $□$ | `□` | 正方形
 | $◊$ | `◊` | 菱形
 | $∠$ | `∠` | 角
 | $∡$ | `∡` | 角
-| $⊥$ | `⊥` | 垂直
+| $⊥$ | `⊥` | 垂直、正交
 | $⊤$ | `⊤` |
 | $‖$ | `‖` | 平行
 
@@ -385,11 +386,11 @@
 **效果**
 
 $
-\begin{cases}
-    f(x)
-\\  g(x)
-\\  h(x)
-\end{cases}
+    \begin{cases}
+        f(x)
+    \\  g(x)
+    \\  h(x)
+    \end{cases}
 $
 
 **代码**
@@ -407,11 +408,11 @@ $
 **效果**
 
 $
-f(x)=
-\begin{cases}
-    1   \ \ \ & x∈[0, +∞)
-\\  -1  \ \ \ & x∈(-∞, 0)
-\end{cases}
+    f(x)=
+    \begin{cases}
+        1   & x ∈ [0, +∞)
+    \\  -1  & x ∈ (-∞, 0)
+    \end{cases}
 $
 
 **代码**
@@ -419,109 +420,138 @@ $
 ```
 f(x)=
 \begin{cases}
-    1   \ \ \ & x∈[0, +∞)
-\\  -1  \ \ \ & x∈(-∞, 0)
+    1   & x ∈ [0, +∞)
+\\  -1  & x ∈ (-∞, 0)
 \end{cases}
 ```
+
+### 多行等式
+
+**效果**
+
+$
+    \begin{array}{l}
+        f(x) \\ \\\\ \\\\
+    \end{array}
+    \begin{array}{l}
+          = A
+    \\\\  = B
+    \\\\  = C
+    \end{array}
+$
+
+**代码**
+
+```
+\begin{array}{l}
+    f(x) \\ \\\\ \\\\
+\end{array}
+\begin{array}{l}
+        = A
+\\\\    = B
+\\\\    = C
+\end{array}
+```
+
 ## 矩阵
 
 **效果**
 
 $$
-\left|\begin{array}{c}
-    11 & 12 & 13
-\\  21 & 22 & 23
-\\  31 & 32 & 33
-\end{array}\right|
-+
-\left[\begin{array}{c}
-    11 & 12 & 13
-\\  21 & 22 & 23
-\\  31 & 32 & 33
-\end{array}\right]
-+
-\left(\begin{array}{c}
-    11 & 12 & 13
-\\  21 & 22 & 23
-\\  31 & 32 & 33
-\end{array}\right)
+    \left|\begin{array}{c}
+        a_{11} & a_{12} & a_{13}
+    \\  a_{21} & a_{22} & a_{23}
+    \\  a_{31} & a_{32} & a_{33}
+    \end{array}\right|
+    +
+    \left[\begin{array}{c}
+        a_{11} & a_{12} & a_{13}
+    \\  a_{21} & a_{22} & a_{23}
+    \\  a_{31} & a_{32} & a_{33}
+    \end{array}\right]
+    +
+    \left(\begin{array}{c}
+        a_{11} & a_{12} & a_{13}
+    \\  a_{21} & a_{22} & a_{23}
+    \\  a_{31} & a_{32} & a_{33}
+    \end{array}\right)
 $$
 
 **代码**
 
 ```
 \left|\begin{array}{c}
-    11 & 12 & 13
-\\  21 & 22 & 23
-\\  31 & 32 & 33
+    a_{11} & a_{12} & a_{13}
+\\  a_{21} & a_{22} & a_{23}
+\\  a_{31} & a_{32} & a_{33}
 \end{array}\right|
 +
 \left[\begin{array}{c}
-    11 & 12 & 13
-\\  21 & 22 & 23
-\\  31 & 32 & 33
+    a_{11} & a_{12} & a_{13}
+\\  a_{21} & a_{22} & a_{23}
+\\  a_{31} & a_{32} & a_{33}
 \end{array}\right]
 +
 \left(\begin{array}{c}
-    11 & 12 & 13
-\\  21 & 22 & 23
-\\  31 & 32 & 33
+    a_{11} & a_{12} & a_{13}
+\\  a_{21} & a_{22} & a_{23}
+\\  a_{31} & a_{32} & a_{33}
 \end{array}\right)
 ```
 
 **模型1**
 
 $$
-\left[\begin{array}{c}
-    0      & \cdots & 0
-\\  \vdots & \ddots & \vdots
-\\  0      & \cdots & 0
-\end{array}\right]_{m×n}
+    \left[\begin{array}{c}
+        a_{11} & \cdots & a_{1n}
+    \\  \vdots & \ddots & \vdots
+    \\  a_{m1} & \cdots & a_{mn}
+    \end{array}\right]_{m×n}
 $$
 ```
 \left[\begin{array}{c}
-    0      & \cdots & 0
+    a_{11} & \cdots & a_{1n}
 \\  \vdots & \ddots & \vdots
-\\  0      & \cdots & 0
+\\  a_{m1} & \cdots & a_{mn}
 \end{array}\right]_{m×n}
 ```
 
 **模型2**
 
 $$
-\left[\begin{array}{c}
-    0      & 0      & \cdots & 0
-\\  0      & 0      & \cdots & 0
-\\  \vdots & \vdots & \ddots & \vdots
-\\  0      & 0      & \cdots & 0
-\end{array}\right]_{m×n}
+    \left[\begin{array}{c}
+        a_{11} & a_{12} & \cdots & a_{1n}
+    \\  a_{21} & a_{22} & \cdots & a_{2n}
+    \\  \vdots & \vdots & \ddots & \vdots
+    \\  a_{m1} & a_{m2} & \cdots & a_{mn}
+    \end{array}\right]_{m×n}
 $$
 ```
 \left[\begin{array}{c}
-    0      & 0      & \cdots & 0
-\\  0      & 0      & \cdots & 0
+    a_{11} & a_{12} & \cdots & a_{1n}
+\\  a_{21} & a_{22} & \cdots & a_{2n}
 \\  \vdots & \vdots & \ddots & \vdots
-\\  0      & 0      & \cdots & 0
+\\  a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{array}\right]_{m×n}
 ```
 
 **模型3**
 
 $$
-\left[\begin{array}{c}
-    0      & 0      & \cdots & 0      & 0
-\\  0      & 0      & \cdots & 0      & 0
-\\  \vdots & \vdots & \ddots & \vdots & \vdots
-\\  0      & 0      & \cdots & 0      & 0
-\\  0      & 0      & \cdots & 0      & 0
-\end{array}\right]_{m×n}
+    \left[\begin{array}{c}
+        a_{11}    & a_{12}    & \cdots & a_{1,n-1}   & a_{1n}
+    \\  a_{21}    & a_{22}    & \cdots & a_{2,n-1}   & a_{2n}
+    \\  \vdots    & \vdots    & \ddots & \vdots      & \vdots
+    \\  a_{m-1,1} & a_{m-1,2} & \cdots & a_{m-1,n-1} & a_{m-1,n}
+    \\  a_{m1}    & a_{m2}    & \cdots & a_{m,n-1}   & a_{mn}
+    \end{array}\right]_{m×n}
 $$
 ```
 \left[\begin{array}{c}
-    0      & 0      & \cdots & 0      & 0
-\\  0      & 0      & \cdots & 0      & 0
-\\  \vdots & \vdots & \ddots & \vdots & \vdots
-\\  0      & 0      & \cdots & 0      & 0
-\\  0      & 0      & \cdots & 0      & 0
+    a_{11}    & a_{12}    & \cdots & a_{1,n-1}   & a_{1n}
+\\  a_{21}    & a_{22}    & \cdots & a_{2,n-1}   & a_{2n}
+\\  \vdots    & \vdots    & \ddots & \vdots      & \vdots
+\\  a_{m-1,1} & a_{m-1,2} & \cdots & a_{m-1,n-1} & a_{m-1,n}
+\\  a_{m1}    & a_{m2}    & \cdots & a_{m,n-1}   & a_{mn}
 \end{array}\right]_{m×n}
 ```
