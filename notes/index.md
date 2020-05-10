@@ -31,7 +31,7 @@ REM 更新全部
 tlmgr update --self --all
 ```
 
-## VSCode
+### VSCode
 
 需要`Plugin: LaTex Workshop`
 
