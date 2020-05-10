@@ -1,4 +1,4 @@
-# LaTeX
+# [LaTeX数学公式](./index.html)
 
 [TOC]
 

@@ -1,6 +1,4 @@
-<!--
-- [预览](https://zhmhbest.github.io/HelloLaTeX/)
-- [仓库](https://github.com/zhmhbest/HelloLaTeX)
--->
 
-## [公式用法](https://zhmhbest.github.io/HelloLaTeX/notes/formula.html)
+# [HelloLaTex](https://zhmhbest.github.io/HelloLaTeX/notes/index.html)
+
+TexLive环境及LaTex的使用。
