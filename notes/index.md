@@ -1,12 +1,14 @@
 # LaTeX
 
+[TOC]
+
 ## Texlive
 
 - [Download](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)
 - [Documentation](https://tug.org/texlive/doc.html)
 - [Overleaf, Online LaTeX Editor](https://www.overleaf.com/)
 
-## 安装
+### 安装
 
 以管理员身份运行`install-tl-windows.bat`。
 安装完成后，确保`${INSTALL_LOCATION}\texlive\${VERSION_YEAR}\bin\win32`在环境变量中。
