@@ -33,4 +33,9 @@ tlmgr update --self --all
 
 需要`Plugin: LaTex Workshop`
 
+- `Ctrl + Alt + B`: 编译为PDF
+- `Ctrl + Alt + V`: 侧栏预览
+- `Ctrl + Alt + J`: 代码对于PDF位置
+- `Ctrl`点击PDF: 跳转到对应代码位置
+
 ## [数学公式](./formula.html)
