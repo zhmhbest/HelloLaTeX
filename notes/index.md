@@ -7,6 +7,7 @@
 - [PDF - lshort](./pdf/lshort-zh-cn.pdf)
 - [PDF - LaTeX入门](./pdf/LaTeX入门（刘海洋）.pdf)
 - [数学公式](./formula.html)
+- [BiliBili - TeXLive安装与LaTeX基础知识](https://www.bilibili.com/video/BV1T7411G7RV)
 
 ## Texlive
 
