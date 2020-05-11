@@ -2,6 +2,11 @@
 
 [TOC]
 
+## 学习资料
+
+- [lshort](./pdf/lshort-zh-cn.pdf)
+- [LaTeX入门](./pdf/LaTeX入门（刘海洋）.pdf)
+
 ## Texlive
 
 - [Download](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)

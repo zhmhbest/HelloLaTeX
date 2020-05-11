@@ -2,6 +2,12 @@
 
 [TOC]
 
+## 参考资料
+
+- [LaTeX常用数学符号](./pdf/LaTeX常用数学符号.pdf)
+
+## 符号
+
 ### 希腊字母
 
 | 大写 | 小写 | 英文 |
@@ -221,6 +227,35 @@
 | $\vdots$ | `\vdots`
 | $\ddots$ | `\ddots`
 
+### 帽子
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\vec{a}$ | `\vec{a}`
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\hat{a}$ | `\hat{a}`
+| $\check{a}$ | `\check{a}`
+| $\breve{a}$ | `\breve{a}`
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\bar{a}$ | `\bar{a}`
+| $\tilde{a}$ | `\tilde{a}`
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\dot{a}$ | `\dot{a}`
+| $\ddot{a}$ | `\ddot{a}`
+
+| 效果 | 代码 |
+| :-: | :- |
+| $\grave{a}$ | `\grave{a}`
+| $\acute{a}$ | `\acute{a}`
+
+## 结构
+
 ### 分号
 
 | 效果 | 代码 |
@@ -269,33 +304,6 @@
 | $$\oint$$  | `∮`、`\oint`
 | $$\int\limits_{0}^{1} f(x) {\rm d}x =$$   | `\int\limits_{0}^{1} f(x) {\rm d}x = `
 | $$\int\nolimits_{0}^{1} f(x) {\rm d}x =$$ | `\int\nolimits_{0}^{1} f(x) {\rm d}x = `
-
-### 帽子
-
-| 效果 | 代码 |
-| :-: | :- |
-| $\vec{a}$ | `\vec{a}`
-
-| 效果 | 代码 |
-| :-: | :- |
-| $\hat{a}$ | `\hat{a}`
-| $\check{a}$ | `\check{a}`
-| $\breve{a}$ | `\breve{a}`
-
-| 效果 | 代码 |
-| :-: | :- |
-| $\bar{a}$ | `\bar{a}`
-| $\tilde{a}$ | `\tilde{a}`
-
-| 效果 | 代码 |
-| :-: | :- |
-| $\dot{a}$ | `\dot{a}`
-| $\ddot{a}$ | `\ddot{a}`
-
-| 效果 | 代码 |
-| :-: | :- |
-| $\grave{a}$ | `\grave{a}`
-| $\acute{a}$ | `\acute{a}`
 
 ### 上下
 
@@ -453,7 +461,7 @@ $
 \end{array}
 ```
 
-## 矩阵
+### 矩阵
 
 **效果**
 
