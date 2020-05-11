@@ -4,8 +4,9 @@
 
 ## 学习资料
 
-- [lshort](./pdf/lshort-zh-cn.pdf)
-- [LaTeX入门](./pdf/LaTeX入门（刘海洋）.pdf)
+- [PDF - lshort](./pdf/lshort-zh-cn.pdf)
+- [PDF - LaTeX入门](./pdf/LaTeX入门（刘海洋）.pdf)
+- [数学公式](./formula.html)
 
 ## Texlive
 
@@ -44,5 +45,3 @@ tlmgr update --self --all
 - `Ctrl + Alt + V`: 侧栏预览
 - `Ctrl + Alt + J`: 代码对于PDF位置
 - `Ctrl`点击PDF: 跳转到对应代码位置
-
-## [数学公式](./formula.html)
