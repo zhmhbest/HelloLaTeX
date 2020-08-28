@@ -1,3 +1,11 @@
 .idea
-.vs
+.vscode
 **dump
+
+# tex
+**/src/*.aux
+**/src/*.fdb_latexmk
+**/src/*.fls
+**/src/*.log
+**/src/*.gz
+**/src/*.pdf
