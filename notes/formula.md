@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://zhmhbest.gitee.io/hellomathematics/style/index.css">
+<script src="https://zhmhbest.gitee.io/hellomathematics/style/index.js"></script>
+
 # [LaTeX数学公式](./index.html)
 
 [TOC]
@@ -6,9 +9,7 @@
 
 - [LaTeX常用数学符号](./pdf/LaTeX常用数学符号.pdf)
 
-## 符号
-
-### 希腊字母
+## 希腊字母
 
 | 大写 | 小写 | 英文 |
 | :-: | :-: | :-: |
@@ -83,16 +84,20 @@
 | `mathbb{...}` | $\mathbb{abcdefghijklmnopqrstuvwxyz}$ | $\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 | `mathtt{...}` | $\mathtt{abcdefghijklmnopqrstuvwxyz}$ | $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 | `mathsf{...}` | $\mathsf{abcdefghijklmnopqrstuvwxyz}$ | $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-  
+
+## 符号
+
 ### 逻辑
 
 | 效果 | 代码 | 说明
 | - | - | - |
-| $∃$、$∀$ | `∃`、`∀` 
+| $∃$、$∀$ | `∃`、`∀`
 | $∧$、$∨$、$￢$ | `∧`、`∨`、`￢`
 | $∵$、$∴$ | `∵`、`∴`
 | $⇔$、$⇐$、$⇒$ | `⇔`、`⇐`、`⇒`
 | $⇎$、$⇍$、$⇏$ | `⇎`、`⇍`、`⇏`
+| $↔$、$←$、$→$ | `↔`、`←`、`→`
+| $\nleftrightarrow$、$\nleftarrow$、$\nrightarrow$ | `\nleftrightarrow`、`\nleftarrow`、`\nrightarrow`
 | $=$、$≠$、$≈$ | `=`、`≠`、`≈`
 | $<$、$>$ | `<`、`>`
 | $≤$、$≥$ | `≤`、`≥`
@@ -108,12 +113,13 @@
 
 | 效果| 代码 |
 | - | - |
-| $∩$、$∪$ | `∩`、`∪` 
-| $∈$、$∉$ | `∈`、`∉` 
-| $⊂$、$⊃$ | `⊂`、`⊃` 
-| $⊏$、$⊐$ | `⊏`、`⊐` 
-| $⊆$、$⫅$、$⊊$、$⫋$ | `⊆`、`⫅`、`⊊`、`⫋` 
-| $⊇$、$⫆$、$⊋$、$⫌$ | `⊇`、`⫆`、`⊋`、`⫌` 
+| $\cap$、$\cup$ | `∩`=`\cap`、`∪`=`\cup`
+| $\sqcap$、$\sqcup$ | `\sqcap`、`\sqcup`
+| $∈$、$∉$ | `∈`=`\in`、`∉`=`\notin`
+| $⊂$、$⊃$ | `⊂`=`\subset`、`⊃`=`\supset`
+| $⊏$、$⊐$ | `⊏`、`⊐`
+| $⊆$、$⫅$、$⊊$、$⫋$ | `⊆`、`⫅`、`⊊`、`⫋`
+| $⊇$、$⫆$、$⊋$、$⫌$ | `⊇`、`⫆`、`⊋`、`⫌`
 
 | 效果 | 代码 |
 | :-: | :- |
@@ -143,9 +149,9 @@
 
 |||
 |-|-|
-| ==${ \ \ \ ⇔ \ \ \ }$== | `{ \ \ \ ⇔ \ \ \ }` 
-| ==${ \ \ \ ⇒ \ \ \ }$== | `{ \ \ \ ⇒ \ \ \ }` 
-| ==${ \ \ \ ⇐ \ \ \ }$== | `{ \ \ \ ⇐ \ \ \ }` 
+| ==${ \ \ \ ⇔ \ \ \ }$== | `{ \ \ \ ⇔ \ \ \ }`
+| ==${ \ \ \ ⇒ \ \ \ }$== | `{ \ \ \ ⇒ \ \ \ }`
+| ==${ \ \ \ ⇐ \ \ \ }$== | `{ \ \ \ ⇐ \ \ \ }`
 
 ||||
 | :-: | :-: | :-: |
