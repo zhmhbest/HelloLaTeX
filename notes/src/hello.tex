@@ -1,6 +1,232 @@
-% \documentclass[UTF8]{article}
-% \documentclass[UTF8]{ctexart}
+% 【导盲区】
 \documentclass[UTF8]{ctexart}
+% ctexart ctexrep ctexbook ctexbeamer
+% article report book beamer letter
+
+%% 引入宏包
+
+% 未使用ctex*类时需要引入此句支持中文
+% \usepackage[UTF8, heading = true]{ctex}
+
+% 用于导入 eps、pdf、jpg、png、bmp
+\usepackage{graphicx}
+\graphicspath{{figures/}, {pics/}, {imgs/}}
+
+%% 设置CTex
+% \ctexset{
+%
+% }
+
+%% 自定义命令
+\newcommand{\degree}{^\circ}
+
+%% 文档信息
+\title{\heiti 这是标题}
+\author{\kaishu 作者}
+\date{\today}
+
+% 【正文区】
 \begin{document}
-    Hello Latex
+    \maketitle
+
+    \section{Font}
+
+    \subsection{Font Family}
+
+    Default、
+    \textrm{Roman Family}、{\rmfamily Roman Family}、
+    \textsf{Sans Serif Family}、{\sffamily Sans Serif Family}、
+    \texttt{Typewriter Family}、{\ttfamily Typewriter Family}、
+    {\songti 宋体}、
+    {\fangsong 仿宋}、
+    {\heiti 黑体}、
+    {\kaishu 楷体}
+
+    \subsection{Font Shape}
+
+    Default、
+    \textmd{Medium}、{\mdseries Medium}、
+    \textbf{Boldface}、{\bfseries Boldface}、
+    \textup{Upright}、{\upshape Upright}、
+    \textit{Italic}、{\itshape Italic}、
+    \textsl{Slanted}、{\slshape Slanted}、
+    \textsc{SmallCaps}、{\scshape SmallCaps}
+
+    \subsection{Font Size}
+    
+    \subsubsection{General}
+
+    {\tiny 丫}
+    {\scriptsize 丫}
+    {\footnotesize 丫}
+    {\small 丫}
+    {\normalsize 丫} % 由文档类参数控制
+    {\large 丫}
+    {\Large 丫}
+    {\LARGE 丫}
+    {\huge 丫}
+    {\Huge 丫}
+
+    \subsubsection{Ctex}
+
+    {\zihao{0} 丫}
+    {\zihao{-0} 丫}
+    {\zihao{1} 丫}
+    {\zihao{-1} 丫}
+    {\zihao{2} 丫}
+    {\zihao{-2} 丫}
+    {\zihao{3} 丫}
+    {\zihao{-3} 丫}
+    {\zihao{4} 丫}
+    {\zihao{-4} 丫}
+    {\zihao{5} 丫}
+    {\zihao{-5} 丫}
+
+    \section{公式}
+
+    \subsection{inline}
+
+    左侧内容$f(x)=Ax^2+Bx+C$右侧内容
+
+    \subsection{block}
+
+    左侧内容$$E=mc^2$$右侧内容
+
+    \subsection{equation}
+
+    左侧内容\begin{equation}
+        AB^2=BC^2+AC^2
+    \end{equation}右侧内容
+
+    \subsection{自定义命令}
+
+    三角形的内角和是$180\degree$
+
+    \section{段落}
+
+    激荡10年，看富豪的变迁实际是在看一部中国的变革史，从地产到互联网，富豪的行业在变，国家经济增长的引擎也在变，未来10年，哪个行业会吸引最多的财富，我已迫不及待，拿起笔准备记录这一切！
+
+    激荡10年，看富豪的变迁实际是在看一部中国的变革史，\\（仅换行不缩进）从地产到互联网，富豪的行业在变，国家经济增长的引擎也在变，未来10年，哪个行业会吸引最多的财富，我已迫不及待，拿起笔准备记录这一切！
+
+    激荡10年，看富豪的变迁实际是在看一部中国的变革史，\par （换行且缩进）从地产到互联网，富豪的行业在变，国家经济增长的引擎也在变，未来10年，哪个行业会吸引最多的财富，我已迫不及待，拿起笔准备记录这一切！
+
+    \section{符号}
+
+    \subsection{空白}
+
+    无空格：()
+    \par 空格1/6em：(\thinspace)
+    \par 空格1/2em：(\enspace)
+    \par 空格1em：(\quad)
+    \par 空格2em：(\qquad)
+    \par 空格：(\ )
+    \par 硬空格：(~)
+    \par 自定义 kern -1：({\kern -1em})
+    \par 自定义 kern +1：({\kern 1em})
+    \par 自定义 hskip -1：({\hskip -1em})
+    \par 自定义 hskip +1：({\hskip 1em})
+    \par 自定义 hspace -1：(\hspace{-1em})
+    \par 自定义 hspace +1：(\hspace{1em})
+    \par 占位符 hphantom abc: (\hphantom{abc})
+    \par 弹性长度（撑满整个空间）: (\hfill)
+
+    \subsection{控制符}
+
+    \$、\#、\%、\&、\{、\}、\_
+
+    \textbackslash
+    
+    \^{}、\~{}
+
+    \subsection{排版符}
+
+    \S、\P、\dag、\ddag、\copyright、\pounds
+
+    \subsection{标志符}
+
+    \TeX{}、LaTeX{}、LaTeXe{}
+
+    \subsection{引号}
+
+    `abc'
+
+    ``abc''
+
+    \subsection{连字符}
+
+    -、
+    --、
+    ---
+
+    \subsection{非英文字符}
+
+    \oe \OE
+    
+    \ae \AE
+    
+    \aa \AA
+
+    \o \O
+    
+    \l \L
+
+    \ss \SS
+
+    !` ?`
+
+    \subsection{重音}
+
+    \`o \'o  \^o \~o \=o \.o \''o
+
+    \section{插图}
+    
+    \includegraphics[scale=0.3]{beauty.jpg}
+
+    \includegraphics[width=0.2\textwidth]{beauty.jpg}
+
+    \includegraphics[height=0.2\textwidth]{beauty.jpg}
+
+    \includegraphics[scale=0.2,angle=-90]{beauty.jpg}
+
+    \section{表格}
+
+    demo1
+
+    \begin{tabular}{l c c c r}
+            姓名 & 数学 & 语文 & 英语 & 备注
+        \\  张三 & 45 & 58 & 66 & 请等待补考通知
+        \\  李四 & 56 & 78 & 44 & 成绩一般
+        \\  王五 & 99 & 98 & 95 & 成绩优异
+        \end{tabular}
+    
+    demo2
+
+    \begin{tabular}{l|c c c |r}
+        \hline
+        姓名 & 数学 & 语文 & 英语 & 备注
+    \\  张三 & 45 & 58 & 66 & 请等待补考通知
+    \\  李四 & 56 & 78 & 44 & 成绩一般
+    \\  王五 & 99 & 98 & 95 & 成绩优异
+    \\  \hline
+    \end{tabular}
+
+    demo3
+
+    \begin{tabular}{l||c c c||r}
+        \hline \hline
+        姓名 & 数学 & 语文 & 英语 & 备注
+    \\  张三 & 45 & 58 & 66 & 请等待补考通知
+    \\  李四 & 56 & 78 & 44 & 成绩一般
+    \\  王五 & 99 & 98 & 95 & 成绩优异
+    \\  \hline \hline
+    \end{tabular}
+
+    demo4
+
+    \begin{tabular}{l|c|c|c|p{2cm}}
+        姓名 & 数学 & 语文 & 英语 & 备注
+    \\  张三 & 45 & 58 & 66 & 请等待补考通知
+    \\  李四 & 56 & 78 & 44 & 成绩一般
+    \\  王五 & 99 & 98 & 95 & 成绩优异
+    \end{tabular}
 \end{document}
