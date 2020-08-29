@@ -49,6 +49,12 @@ texdoc ctex
 texdoc lshort-zh
 ```
 
+查看graphicx文档
+
+```batch
+texdoc graphicx
+```
+
 其它第三方文档
 
 - [LaTeX入门（刘海洋）](./pdf/LaTeX入门（刘海洋）.pdf)
