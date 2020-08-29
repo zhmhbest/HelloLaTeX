@@ -55,6 +55,12 @@ texdoc lshort-zh
 texdoc graphicx
 ```
 
+查看svg文档
+
+```batch
+texdoc svg
+```
+
 其它第三方文档
 
 - [LaTeX入门（刘海洋）](./pdf/LaTeX入门（刘海洋）.pdf)
