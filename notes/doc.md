@@ -7,6 +7,4 @@
 
 ## Hello
 
-<!-- 
 @import "./src/hello.tex"
--->
