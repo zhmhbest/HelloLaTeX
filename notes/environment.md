@@ -35,6 +35,24 @@ REM 更新全部
 tlmgr update --self --all
 ```
 
+### 文档
+
+查看ctex文档
+
+```batch
+texdoc ctex
+```
+
+查看lshort文档
+
+```batch
+texdoc lshort-zh
+```
+
+其它第三方文档
+
+- [LaTeX入门（刘海洋）](./pdf/LaTeX入门（刘海洋）.pdf)
+
 ## VSCode
 
 - [Downlaod VSCode](https://code.visualstudio.com/Download)
@@ -44,6 +62,6 @@ tlmgr update --self --all
 
 - 新建`*.tex`
 - `Ctrl + Alt + B`: 编译为PDF
-- `Ctrl + Alt + V`: 侧栏预览
+- `Ctrl + Alt + V`: 预览PDF
 - `Ctrl + Alt + J`: 代码对于PDF位置
-- `Ctrl`点击PDF: 跳转到对应代码位置
+- `Ctrl + Click on PDF`: 跳转到PDF内容对应代码位置
