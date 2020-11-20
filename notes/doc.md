@@ -7,5 +7,24 @@
 
 ## Hello
 
-<!-- 
-@import "./src/hello.tex" -->
+@import "./src/hello/index.tex"
+
+## Font
+
+@import "./src/font/index.tex"
+
+## Paragraph
+
+@import "./src/paragraph/index.tex"
+
+## Equation
+
+@import "./src/equation/index.tex"
+
+## Import
+
+@import "./src/import/index.tex"
+
+## Table
+
+@import "./src/table/index.tex"

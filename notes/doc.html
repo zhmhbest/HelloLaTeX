@@ -269,12 +269,321 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="#%E7%BC%96%E5%86%99%E6%96%87%E6%A1%A3indexhtml">&#x7F16;&#x5199;&#x6587;&#x6863;</a>
 <ul>
 <li><a href="#hello">Hello</a></li>
+<li><a href="#font">Font</a></li>
+<li><a href="#paragraph">Paragraph</a></li>
+<li><a href="#equation">Equation</a></li>
+<li><a href="#import">Import</a></li>
+<li><a href="#table">Table</a></li>
 </ul>
 </li>
 </ul>
 <h2 class="mume-header" id="hello">Hello</h2>
 
+<pre data-role="codeBlock" data-info="tex" class="language-latex"><span class="token comment">% &#x3010;&#x5BFC;&#x8A00;&#x533A;&#x3011;</span>
+<span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctexart</span><span class="token punctuation">}</span>
+<span class="token comment">% ctexart ctexrep ctexbook ctexbeamer</span>
+<span class="token comment">% article report  book     beamer     letter</span>
 
+<span class="token comment">%% &#x6587;&#x6863;&#x4FE1;&#x606F;</span>
+<span class="token function selector">\title</span><span class="token punctuation">{</span><span class="token function selector">\heiti</span> &#x8FD9;&#x662F;&#x6807;&#x9898;<span class="token punctuation">}</span>
+<span class="token function selector">\author</span><span class="token punctuation">{</span><span class="token function selector">\kaishu</span> &#x4F5C;&#x8005;<span class="token punctuation">}</span>
+<span class="token function selector">\date</span><span class="token punctuation">{</span><span class="token function selector">\today</span><span class="token punctuation">}</span>
+
+<span class="token comment">% &#x3010;&#x6B63;&#x6587;&#x533A;&#x3011;</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+    <span class="token function selector">\maketitle</span>
+    <span class="token function selector">\clearpage</span>
+    &#x6B63;&#x6587;&#x5185;&#x5BB9;
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+
+</pre><h2 class="mume-header" id="font">Font</h2>
+
+<pre data-role="codeBlock" data-info="tex" class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctexrep</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">ulem</span><span class="token punctuation">}</span>  <span class="token comment">% &#x4E0B;&#x5212;&#x7EBF;</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">color</span><span class="token punctuation">}</span> <span class="token comment">% &#x5B57;&#x4F53;&#x989C;&#x8272;</span>
+<span class="token comment">% &#x81EA;&#x5B9A;&#x4E49;&#x989C;&#x8272;</span>
+<span class="token function selector">\definecolor</span><span class="token punctuation">{</span>ColorName1<span class="token punctuation">}</span><span class="token punctuation">{</span>rgb<span class="token punctuation">}</span><span class="token punctuation">{</span>0.5,0.8,0.5<span class="token punctuation">}</span>
+<span class="token function selector">\definecolor</span><span class="token punctuation">{</span>ColorName2<span class="token punctuation">}</span><span class="token punctuation">{</span>RGB<span class="token punctuation">}</span><span class="token punctuation">{</span>230,125,230<span class="token punctuation">}</span>
+
+<span class="token comment">% &#x7A7A;&#x683C;&#x9ED8;&#x8BA4;&#x95F4;&#x8DDD;</span>
+<span class="token comment">% \spaceskip=0.2em</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+<span class="token function selector">\chapter</span><span class="token punctuation">{</span><span class="token headline class-name">Font</span><span class="token punctuation">}</span>
+
+
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">Font Family</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span> Default
+<span class="token function selector">\par</span> <span class="token function selector">\textrm</span><span class="token punctuation">{</span>Roman Family<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\rmfamily</span> Roman Family<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\textsf</span><span class="token punctuation">{</span>Sans Serif Family<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\sffamily</span> Sans Serif Family<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\texttt</span><span class="token punctuation">{</span>Typewriter Family<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\ttfamily</span> Typewriter Family<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token punctuation">{</span><span class="token function selector">\songti</span> &#x5B8B;&#x4F53;<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token punctuation">{</span><span class="token function selector">\fangsong</span> &#x4EFF;&#x5B8B;<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token punctuation">{</span><span class="token function selector">\heiti</span> &#x9ED1;&#x4F53;<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token punctuation">{</span><span class="token function selector">\kaishu</span> &#x6977;&#x4F53;<span class="token punctuation">}</span>
+
+
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">Font Shape</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span> Default
+<span class="token function selector">\par</span> <span class="token function selector">\textbf</span><span class="token punctuation">{</span>Boldface<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\bfseries</span> Boldface<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\textit</span><span class="token punctuation">{</span>Italic<span class="token punctuation">}</span>&#x3001;<span class="token function selector">\emph</span><span class="token punctuation">{</span>Italic<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\itshape</span> Italic<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\underline</span><span class="token punctuation">{</span>Underline<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\uline</span><span class="token punctuation">{</span>uline<span class="token punctuation">}</span>&#x3001;
+    <span class="token function selector">\uuline</span><span class="token punctuation">{</span>uuline<span class="token punctuation">}</span>&#x3001;
+    <span class="token function selector">\uwave</span><span class="token punctuation">{</span>uwave<span class="token punctuation">}</span>&#x3001;
+    <span class="token function selector">\sout</span><span class="token punctuation">{</span>sout<span class="token punctuation">}</span>&#x3001;
+    <span class="token function selector">\xout</span><span class="token punctuation">{</span>xout<span class="token punctuation">}</span>&#x3001;
+    <span class="token function selector">\dashuline</span><span class="token punctuation">{</span>dashuline<span class="token punctuation">}</span>&#x3001;
+    <span class="token function selector">\dotuline</span><span class="token punctuation">{</span>dotuline<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token equation string">$H_2O$</span>&#x3001;<span class="token equation string">$CaCO_3$</span>&#x3001;<span class="token equation string">$E=mc^2$</span>
+<span class="token function selector">\par</span> <span class="token function selector">\textmd</span><span class="token punctuation">{</span>Medium<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\mdseries</span> Medium<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\textup</span><span class="token punctuation">{</span>Upright<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\upshape</span> Upright<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\textsl</span><span class="token punctuation">{</span>Slanted<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\slshape</span> Slanted<span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\textsc</span><span class="token punctuation">{</span>SmallCaps<span class="token punctuation">}</span>&#x3001;<span class="token punctuation">{</span><span class="token function selector">\scshape</span> SmallCaps<span class="token punctuation">}</span>
+
+
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">Font Size</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">General</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token punctuation">{</span><span class="token function selector">\tiny</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\scriptsize</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\footnotesize</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\small</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\normalsize</span> &#x3007;<span class="token punctuation">}</span> <span class="token comment">% &#x7531;&#x6587;&#x6863;&#x7C7B;&#x53C2;&#x6570;&#x63A7;&#x5236;</span>
+<span class="token punctuation">{</span><span class="token function selector">\large</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\Large</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\LARGE</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\huge</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\Huge</span> &#x3007;<span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">Ctex</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>-6<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>6<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>-5<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>5<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>-4<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>4<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>-3<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>3<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>-2<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>2<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>-1<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>1<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>-0<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\zihao</span><span class="token punctuation">{</span>0<span class="token punctuation">}</span> &#x3007;<span class="token punctuation">}</span>
+
+
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">Font Color</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">Foreground</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>black<span class="token punctuation">}</span><span class="token punctuation">{</span>text<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>white<span class="token punctuation">}</span><span class="token punctuation">{</span>text<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>red<span class="token punctuation">}</span><span class="token punctuation">{</span>text<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>green<span class="token punctuation">}</span><span class="token punctuation">{</span>text<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>blue<span class="token punctuation">}</span><span class="token punctuation">{</span>text<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>yellow<span class="token punctuation">}</span><span class="token punctuation">{</span>text<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>cyan<span class="token punctuation">}</span><span class="token punctuation">{</span>text<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>magenta<span class="token punctuation">}</span><span class="token punctuation">{</span>text<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token function selector">\color</span><span class="token punctuation">{</span>magenta<span class="token punctuation">}</span> text<span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">[</span>rgb<span class="token punctuation">]</span><span class="token punctuation">{</span>0.7,0.6,0.3<span class="token punctuation">}</span><span class="token punctuation">{</span>rgb<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">[</span>RGB<span class="token punctuation">]</span><span class="token punctuation">{</span>22,200,33<span class="token punctuation">}</span><span class="token punctuation">{</span>RGB<span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>ColorName1<span class="token punctuation">}</span><span class="token punctuation">{</span>&#x81EA;&#x5B9A;&#x4E49;&#x989C;&#x8272;1<span class="token punctuation">}</span>
+<span class="token function selector">\textcolor</span><span class="token punctuation">{</span>ColorName2<span class="token punctuation">}</span><span class="token punctuation">{</span>&#x81EA;&#x5B9A;&#x4E49;&#x989C;&#x8272;2<span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">Background</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token function selector">\colorbox</span><span class="token punctuation">{</span>yellow<span class="token punctuation">}</span><span class="token punctuation">{</span>yellow<span class="token punctuation">}</span>
+<span class="token function selector">\colorbox</span><span class="token punctuation">{</span>ColorName1<span class="token punctuation">}</span><span class="token punctuation">{</span>ColorName1<span class="token punctuation">}</span>
+<span class="token function selector">\colorbox</span><span class="token punctuation">{</span>ColorName2<span class="token punctuation">}</span><span class="token punctuation">{</span>ColorName2<span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token function selector">\colorbox</span><span class="token punctuation">[</span>rgb<span class="token punctuation">]</span><span class="token punctuation">{</span>0.4,0.4,0.7<span class="token punctuation">}</span><span class="token punctuation">{</span>rgb<span class="token punctuation">}</span>
+<span class="token function selector">\colorbox</span><span class="token punctuation">[</span>RGB<span class="token punctuation">]</span><span class="token punctuation">{</span>200,32,68<span class="token punctuation">}</span><span class="token punctuation">{</span>RGB<span class="token punctuation">}</span>
+
+
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">Space</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\par</span> ()             &#x65E0;&#x7A7A;&#x683C;
+<span class="token function selector">\par</span> (<span class="token function selector">\thinspace</span>)   &#x7A7A;&#x683C;1/6em
+<span class="token function selector">\par</span> (<span class="token function selector">\enspace</span>)     &#x7A7A;&#x683C;1/2em
+<span class="token function selector">\par</span> (<span class="token function selector">\quad</span>)        &#x7A7A;&#x683C;1em
+<span class="token function selector">\par</span> (<span class="token function selector">\qquad</span>)       &#x7A7A;&#x683C;2em
+<span class="token function selector">\par</span> (<span class="token function selector">\ </span>)           &#x7A7A;&#x683C;
+<span class="token function selector">\par</span> (~)            &#x786C;&#x7A7A;&#x683C;
+<span class="token function selector">\par</span> (<span class="token punctuation">{</span><span class="token function selector">\kern</span> -1em<span class="token punctuation">}</span>)     &#x81EA;&#x5B9A;&#x4E49; kern -1
+<span class="token function selector">\par</span> (<span class="token punctuation">{</span><span class="token function selector">\kern</span> 1em<span class="token punctuation">}</span>)      &#x81EA;&#x5B9A;&#x4E49; kern +1
+<span class="token function selector">\par</span> (<span class="token punctuation">{</span><span class="token function selector">\hskip</span> -1em<span class="token punctuation">}</span>)    &#x81EA;&#x5B9A;&#x4E49; hskip -1
+<span class="token function selector">\par</span> (<span class="token punctuation">{</span><span class="token function selector">\hskip</span> 1em<span class="token punctuation">}</span>)     &#x81EA;&#x5B9A;&#x4E49; hskip +1
+<span class="token function selector">\par</span> (<span class="token function selector">\hspace</span><span class="token punctuation">{</span>-1em<span class="token punctuation">}</span>)    &#x81EA;&#x5B9A;&#x4E49; hspace -1
+<span class="token function selector">\par</span> (<span class="token function selector">\hspace</span><span class="token punctuation">{</span>1em<span class="token punctuation">}</span>)     &#x81EA;&#x5B9A;&#x4E49; hspace +1
+<span class="token function selector">\par</span> (<span class="token function selector">\hphantom</span><span class="token punctuation">{</span>abc<span class="token punctuation">}</span>)   &#x5360;&#x4F4D;&#x7B26; hphantom abc
+<span class="token function selector">\par</span> (<span class="token function selector">\hfill</span>)           &#x5F39;&#x6027;&#x957F;&#x5EA6;&#xFF08;&#x6491;&#x6EE1;&#x6574;&#x4E2A;&#x7A7A;&#x95F4;&#xFF09;
+
+
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">Symbol</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x63A7;&#x5236;&#x7B26;</span><span class="token punctuation">}</span>
+<span class="token function selector">\$</span>&#x3001;<span class="token function selector">\#</span>&#x3001;\<span class="token comment">%&#x3001;\&amp;&#x3001;\{&#x3001;\}&#x3001;\_&#x3001;</span>
+<span class="token function selector">\textbackslash</span>&#x3001;
+<span class="token function selector">\^</span><span class="token punctuation">{</span><span class="token punctuation">}</span>&#x3001;<span class="token function selector">\~</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x6392;&#x7248;&#x7B26;</span><span class="token punctuation">}</span>
+<span class="token function selector">\S</span>&#x3001;<span class="token function selector">\P</span>&#x3001;<span class="token function selector">\dag</span>&#x3001;<span class="token function selector">\ddag</span>&#x3001;<span class="token function selector">\copyright</span>&#x3001;<span class="token function selector">\pounds</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x6807;&#x5FD7;&#x7B26;</span><span class="token punctuation">}</span>
+<span class="token function selector">\TeX</span><span class="token punctuation">{</span><span class="token punctuation">}</span>&#x3001;LaTeX<span class="token punctuation">{</span><span class="token punctuation">}</span>&#x3001;LaTeXe<span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x5F15;&#x53F7;</span><span class="token punctuation">}</span>
+`abc&apos;&#x3001;``abc&apos;&apos;
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x8FDE;&#x5B57;&#x7B26;</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span> -
+<span class="token function selector">\par</span> --
+<span class="token function selector">\par</span> ---
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x975E;&#x82F1;&#x6587;&#x5B57;&#x7B26;</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\oe</span>&#x3001;<span class="token function selector">\OE</span>
+<span class="token function selector">\par</span> <span class="token function selector">\ae</span>&#x3001;<span class="token function selector">\AE</span>
+<span class="token function selector">\par</span> <span class="token function selector">\aa</span>&#x3001;<span class="token function selector">\AA</span>
+<span class="token function selector">\par</span> <span class="token function selector">\o</span>&#x3001;<span class="token function selector">\O</span>
+<span class="token function selector">\par</span> <span class="token function selector">\l</span>&#x3001;<span class="token function selector">\L</span>
+<span class="token function selector">\par</span> <span class="token function selector">\ss</span>&#x3001;<span class="token function selector">\SS</span>
+<span class="token function selector">\par</span> !`&#x3001;?`
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x91CD;&#x97F3;</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span> <span class="token function selector">\`</span>o
+<span class="token function selector">\par</span> <span class="token function selector">\&apos;</span>o
+<span class="token function selector">\par</span> <span class="token function selector">\^</span>o
+<span class="token function selector">\par</span> <span class="token function selector">\~</span>o
+<span class="token function selector">\par</span> <span class="token function selector">\=</span>o
+<span class="token function selector">\par</span> <span class="token function selector">\.</span>o
+<span class="token function selector">\par</span> <span class="token function selector">\&apos;</span>&apos;o
+
+
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="paragraph">Paragraph</h2>
+
+<pre data-role="codeBlock" data-info="tex" class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctexrep</span><span class="token punctuation">}</span>
+
+<span class="token comment">%% &#x9875;&#x8FB9;&#x8DDD;</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">geometry</span><span class="token punctuation">}</span>
+<span class="token function selector">\geometry</span><span class="token punctuation">{</span>a4paper,left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm<span class="token punctuation">}</span>
+<span class="token comment">%% &#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x884C;&#x95F4;&#x8DDD;</span>
+<span class="token function selector">\linespread</span><span class="token punctuation">{</span>1.5<span class="token punctuation">}</span> 
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+
+<span class="token comment">% </span>
+<span class="token function selector">\chapter</span><span class="token punctuation">{</span><span class="token headline class-name">Chapter</span><span class="token punctuation">}</span>
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">Section</span><span class="token punctuation">}</span>
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">Subsection</span><span class="token punctuation">}</span>
+<span class="token function selector">\subsubsection</span><span class="token punctuation">{</span><span class="token headline class-name">Subsubsection</span><span class="token punctuation">}</span>
+<span class="token function selector">\paragraph</span><span class="token punctuation">{</span><span class="token headline class-name">Paragraph</span><span class="token punctuation">}</span>
+<span class="token function selector">\subparagraph</span><span class="token punctuation">{</span><span class="token headline class-name">Subparagraph</span><span class="token punctuation">}</span>
+
+<span class="token comment">% </span>
+<span class="token function selector">\clearpage</span>
+<span class="token function selector">\par</span> &#x6BB5;&#x843D;1
+<span class="token function selector">\par</span> &#x6BB5;&#x843D;2
+<span class="token function selector">\newline</span> &#x6362;&#x884C;&#x4E0D;&#x7F29;&#x8FDB;
+<span class="token function selector">\\</span> &#x6362;&#x884C;&#x4E0D;&#x7F29;&#x8FDB;
+<span class="token function selector">\par</span><span class="token punctuation">{</span>&#x6BB5;&#x843D;3<span class="token punctuation">}</span>
+
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="equation">Equation</h2>
+
+<pre data-role="codeBlock" data-info="tex" class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctexrep</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\par</span>
+&#x5DE6;&#x4FA7;&#x5185;&#x5BB9;<span class="token equation string">$f(x)=Ax^2+Bx+C$</span>&#x53F3;&#x4FA7;&#x5185;&#x5BB9;
+
+<span class="token function selector">\par</span>
+&#x5DE6;&#x4FA7;&#x5185;&#x5BB9;<span class="token equation string">$$</span>E=mc^2<span class="token equation string">$$</span>&#x53F3;&#x4FA7;&#x5185;&#x5BB9;
+
+<span class="token function selector">\par</span>
+&#x5DE6;&#x4FA7;&#x5185;&#x5BB9;<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
+    AB^2=BC^2+AC^2
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span>&#x53F3;&#x4FA7;&#x5185;&#x5BB9;
+
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+
+</pre><h2 class="mume-header" id="import">Import</h2>
+
+<pre data-role="codeBlock" data-info="tex" class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctexrep</span><span class="token punctuation">}</span>
+
+<span class="token comment">% &#x7528;&#x4E8E;&#x5BFC;&#x5165; eps&#x3001;pdf&#x3001;jpg&#x3001;png&#x3001;bmp</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">graphicx</span><span class="token punctuation">}</span>
+<span class="token function selector">\graphicspath</span><span class="token punctuation">{</span><span class="token punctuation">{</span>enclosure/<span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">import</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x5BFC;&#x5165;JPG</span><span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token function selector">\includegraphics</span><span class="token punctuation">[</span>scale=0.5<span class="token punctuation">]</span><span class="token punctuation">{</span>file.png<span class="token punctuation">}</span>
+<span class="token function selector">\par</span>
+<span class="token function selector">\includegraphics</span><span class="token punctuation">[</span>width=0.3<span class="token function selector">\textwidth</span>,angle=90<span class="token punctuation">]</span><span class="token punctuation">{</span>file.png<span class="token punctuation">}</span>
+<span class="token function selector">\includegraphics</span><span class="token punctuation">[</span>height=0.3<span class="token function selector">\textwidth</span><span class="token punctuation">]</span><span class="token punctuation">{</span>file.png<span class="token punctuation">}</span>
+
+<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">&#x5BFC;&#x5165;PDF</span><span class="token punctuation">}</span>
+<span class="token function selector">\includegraphics</span><span class="token punctuation">[</span>scale=20<span class="token punctuation">]</span><span class="token punctuation">{</span>file.pdf<span class="token punctuation">}</span>
+
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="table">Table</h2>
+
+<pre data-role="codeBlock" data-info="tex" class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctexrep</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\par</span> demo1
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span><span class="token punctuation">{</span>l c c c r<span class="token punctuation">}</span>
+        &#x59D3;&#x540D; <span class="token punctuation">&amp;</span> &#x6570;&#x5B66; <span class="token punctuation">&amp;</span> &#x8BED;&#x6587; <span class="token punctuation">&amp;</span> &#x82F1;&#x8BED; <span class="token punctuation">&amp;</span> &#x5907;&#x6CE8;
+    <span class="token function selector">\\</span>  &#x5F20;&#x4E09; <span class="token punctuation">&amp;</span> 45 <span class="token punctuation">&amp;</span> 58 <span class="token punctuation">&amp;</span> 66 <span class="token punctuation">&amp;</span> &#x8BF7;&#x7B49;&#x5F85;&#x8865;&#x8003;&#x901A;&#x77E5;
+    <span class="token function selector">\\</span>  &#x674E;&#x56DB; <span class="token punctuation">&amp;</span> 56 <span class="token punctuation">&amp;</span> 78 <span class="token punctuation">&amp;</span> 44 <span class="token punctuation">&amp;</span> &#x6210;&#x7EE9;&#x4E00;&#x822C;
+    <span class="token function selector">\\</span>  &#x738B;&#x4E94; <span class="token punctuation">&amp;</span> 99 <span class="token punctuation">&amp;</span> 98 <span class="token punctuation">&amp;</span> 95 <span class="token punctuation">&amp;</span> &#x6210;&#x7EE9;&#x4F18;&#x5F02;
+    <span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\par</span> demo2
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span><span class="token punctuation">{</span>l|c c c |r<span class="token punctuation">}</span>
+    <span class="token function selector">\hline</span>
+    &#x59D3;&#x540D; <span class="token punctuation">&amp;</span> &#x6570;&#x5B66; <span class="token punctuation">&amp;</span> &#x8BED;&#x6587; <span class="token punctuation">&amp;</span> &#x82F1;&#x8BED; <span class="token punctuation">&amp;</span> &#x5907;&#x6CE8;
+<span class="token function selector">\\</span>  &#x5F20;&#x4E09; <span class="token punctuation">&amp;</span> 45 <span class="token punctuation">&amp;</span> 58 <span class="token punctuation">&amp;</span> 66 <span class="token punctuation">&amp;</span> &#x8BF7;&#x7B49;&#x5F85;&#x8865;&#x8003;&#x901A;&#x77E5;
+<span class="token function selector">\\</span>  &#x674E;&#x56DB; <span class="token punctuation">&amp;</span> 56 <span class="token punctuation">&amp;</span> 78 <span class="token punctuation">&amp;</span> 44 <span class="token punctuation">&amp;</span> &#x6210;&#x7EE9;&#x4E00;&#x822C;
+<span class="token function selector">\\</span>  &#x738B;&#x4E94; <span class="token punctuation">&amp;</span> 99 <span class="token punctuation">&amp;</span> 98 <span class="token punctuation">&amp;</span> 95 <span class="token punctuation">&amp;</span> &#x6210;&#x7EE9;&#x4F18;&#x5F02;
+<span class="token function selector">\\</span>  <span class="token function selector">\hline</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\par</span> demo3
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span><span class="token punctuation">{</span>l||c c c||r<span class="token punctuation">}</span>
+    <span class="token function selector">\hline</span> <span class="token function selector">\hline</span>
+    &#x59D3;&#x540D; <span class="token punctuation">&amp;</span> &#x6570;&#x5B66; <span class="token punctuation">&amp;</span> &#x8BED;&#x6587; <span class="token punctuation">&amp;</span> &#x82F1;&#x8BED; <span class="token punctuation">&amp;</span> &#x5907;&#x6CE8;
+<span class="token function selector">\\</span>  &#x5F20;&#x4E09; <span class="token punctuation">&amp;</span> 45 <span class="token punctuation">&amp;</span> 58 <span class="token punctuation">&amp;</span> 66 <span class="token punctuation">&amp;</span> &#x8BF7;&#x7B49;&#x5F85;&#x8865;&#x8003;&#x901A;&#x77E5;
+<span class="token function selector">\\</span>  &#x674E;&#x56DB; <span class="token punctuation">&amp;</span> 56 <span class="token punctuation">&amp;</span> 78 <span class="token punctuation">&amp;</span> 44 <span class="token punctuation">&amp;</span> &#x6210;&#x7EE9;&#x4E00;&#x822C;
+<span class="token function selector">\\</span>  &#x738B;&#x4E94; <span class="token punctuation">&amp;</span> 99 <span class="token punctuation">&amp;</span> 98 <span class="token punctuation">&amp;</span> 95 <span class="token punctuation">&amp;</span> &#x6210;&#x7EE9;&#x4F18;&#x5F02;
+<span class="token function selector">\\</span>  <span class="token function selector">\hline</span> <span class="token function selector">\hline</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\par</span> demo4
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span><span class="token punctuation">{</span>l|c|c|c|p<span class="token punctuation">{</span>2cm<span class="token punctuation">}</span><span class="token punctuation">}</span>
+    &#x59D3;&#x540D; <span class="token punctuation">&amp;</span> &#x6570;&#x5B66; <span class="token punctuation">&amp;</span> &#x8BED;&#x6587; <span class="token punctuation">&amp;</span> &#x82F1;&#x8BED; <span class="token punctuation">&amp;</span> &#x5907;&#x6CE8;
+<span class="token function selector">\\</span>  &#x5F20;&#x4E09; <span class="token punctuation">&amp;</span> 45 <span class="token punctuation">&amp;</span> 58 <span class="token punctuation">&amp;</span> 66 <span class="token punctuation">&amp;</span> &#x8BF7;&#x7B49;&#x5F85;&#x8865;&#x8003;&#x901A;&#x77E5;
+<span class="token function selector">\\</span>  &#x674E;&#x56DB; <span class="token punctuation">&amp;</span> 56 <span class="token punctuation">&amp;</span> 78 <span class="token punctuation">&amp;</span> 44 <span class="token punctuation">&amp;</span> &#x6210;&#x7EE9;&#x4E00;&#x822C;
+<span class="token function selector">\\</span>  &#x738B;&#x4E94; <span class="token punctuation">&amp;</span> 99 <span class="token punctuation">&amp;</span> 98 <span class="token punctuation">&amp;</span> 95 <span class="token punctuation">&amp;</span> &#x6210;&#x7EE9;&#x4F18;&#x5F02;
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+</pre>
       </div>
       
       
