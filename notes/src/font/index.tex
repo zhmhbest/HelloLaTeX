@@ -1,50 +1,107 @@
-\documentclass[UTF8]{ctexart}
+\documentclass[UTF8]{ctexrep}
+
+\usepackage{ulem}  % 下划线
+\usepackage{color} % 字体颜色
+% 自定义颜色
+\definecolor{ColorName1}{rgb}{0.5,0.8,0.5}
+\definecolor{ColorName2}{RGB}{230,125,230}
+
+\title{Font}
+\author{demo}
 \begin{document}
-\section{Font}
+\maketitle
 
-\subsection{Font Family}
-Default、
-\textrm{Roman Family}、{\rmfamily Roman Family}、
-\textsf{Sans Serif Family}、{\sffamily Sans Serif Family}、
-\texttt{Typewriter Family}、{\ttfamily Typewriter Family}、
-{\songti 宋体}、
-{\fangsong 仿宋}、
-{\heiti 黑体}、
-{\kaishu 楷体}
 
-\subsection{Font Shape}
-Default、
-\textmd{Medium}、{\mdseries Medium}、
-\textbf{Boldface}、{\bfseries Boldface}、
-\textup{Upright}、{\upshape Upright}、
-\textit{Italic}、{\itshape Italic}、
-\textsl{Slanted}、{\slshape Slanted}、
-\textsc{SmallCaps}、{\scshape SmallCaps}
+\section{Font Family}
+\par Default
+\par \textrm{Roman Family}、{\rmfamily Roman Family}
+\par \textsf{Sans Serif Family}、{\sffamily Sans Serif Family}
+\par \texttt{Typewriter Family}、{\ttfamily Typewriter Family}
+\par {\songti 宋体}
+\par {\fangsong 仿宋}
+\par {\heiti 黑体}
+\par {\kaishu 楷体}
 
-\subsection{Font Size}
-\subsubsection{General}
-{\tiny 丫}
-{\scriptsize 丫}
-{\footnotesize 丫}
-{\small 丫}
-{\normalsize 丫} % 由文档类参数控制
-{\large 丫}
-{\Large 丫}
-{\LARGE 丫}
-{\huge 丫}
-{\Huge 丫}
-\subsubsection{Ctex}
-{\zihao{0} 丫}
-{\zihao{-0} 丫}
-{\zihao{1} 丫}
-{\zihao{-1} 丫}
-{\zihao{2} 丫}
-{\zihao{-2} 丫}
-{\zihao{3} 丫}
-{\zihao{-3} 丫}
-{\zihao{4} 丫}
-{\zihao{-4} 丫}
-{\zihao{5} 丫}
-{\zihao{-5} 丫}
+
+\section{Font Shape}
+\par Default
+\par \textbf{Boldface}、{\bfseries Boldface}
+\par \textit{Italic}、\emph{Italic}、{\itshape Italic}
+\par \underline{Underline}
+\par \uline{uline}、
+    \uuline{uuline}、
+    \uwave{uwave}、
+    \sout{sout}、
+    \xout{xout}、
+    \dashuline{dashuline}、
+    \dotuline{dotuline}
+\par $H_2O$、$CaCO_3$、$E=mc^2$
+\par \textmd{Medium}、{\mdseries Medium}
+\par \textup{Upright}、{\upshape Upright}
+\par \textsl{Slanted}、{\slshape Slanted}
+\par \textsc{SmallCaps}、{\scshape SmallCaps}
+
+
+\section{Font Size}
+
+\subsection{General}
+\par
+{\tiny 〇}
+{\scriptsize 〇}
+{\footnotesize 〇}
+{\small 〇}
+{\normalsize 〇} % 由文档类参数控制
+{\large 〇}
+{\Large 〇}
+{\LARGE 〇}
+{\huge 〇}
+{\Huge 〇}
+
+\subsection{Ctex}
+\par
+{\zihao{-6} 〇}
+{\zihao{6} 〇}
+{\zihao{-5} 〇}
+{\zihao{5} 〇}
+{\zihao{-4} 〇}
+{\zihao{4} 〇}
+{\zihao{-3} 〇}
+{\zihao{3} 〇}
+{\zihao{-2} 〇}
+{\zihao{2} 〇}
+{\zihao{-1} 〇}
+{\zihao{1} 〇}
+{\zihao{-0} 〇}
+{\zihao{0} 〇}
+
+
+\section{Font Color}
+
+\subsection{Foreground}
+\par
+\textcolor{black}{text}
+\textcolor{white}{text}
+\textcolor{red}{text}
+\textcolor{green}{text}
+\textcolor{blue}{text}
+\textcolor{yellow}{text}
+\textcolor{cyan}{text}
+\textcolor{magenta}{text}
+{\color{magenta} text}
+\par
+\textcolor[rgb]{0.7,0.6,0.3}{rgb}
+\textcolor[RGB]{22,200,33}{RGB}
+\par
+\textcolor{ColorName1}{自定义颜色1}
+\textcolor{ColorName2}{自定义颜色2}
+
+\subsection{Background}
+\par
+\colorbox{yellow}{yellow}
+\colorbox{ColorName1}{ColorName1}
+\colorbox{ColorName2}{ColorName2}
+\par
+\colorbox[rgb]{0.4,0.4,0.7}{rgb}
+\colorbox[RGB]{200,32,68}{RGB}
 
 \end{document}
