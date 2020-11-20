@@ -6,10 +6,11 @@
 \definecolor{ColorName1}{rgb}{0.5,0.8,0.5}
 \definecolor{ColorName2}{RGB}{230,125,230}
 
-\title{Font}
-\author{demo}
+% 空格默认间距
+% \spaceskip=0.2em
+
 \begin{document}
-\maketitle
+\chapter{Font}
 
 
 \section{Font Family}
@@ -103,5 +104,65 @@
 \par
 \colorbox[rgb]{0.4,0.4,0.7}{rgb}
 \colorbox[RGB]{200,32,68}{RGB}
+
+
+\section{Space}
+
+\par ()             无空格
+\par (\thinspace)   空格1/6em
+\par (\enspace)     空格1/2em
+\par (\quad)        空格1em
+\par (\qquad)       空格2em
+\par (\ )           空格
+\par (~)            硬空格
+\par ({\kern -1em})     自定义 kern -1
+\par ({\kern 1em})      自定义 kern +1
+\par ({\hskip -1em})    自定义 hskip -1
+\par ({\hskip 1em})     自定义 hskip +1
+\par (\hspace{-1em})    自定义 hspace -1
+\par (\hspace{1em})     自定义 hspace +1
+\par (\hphantom{abc})   占位符 hphantom abc
+\par (\hfill)           弹性长度（撑满整个空间）
+
+
+\section{Symbol}
+
+\subsection{控制符}
+\$、\#、\%、\&、\{、\}、\_、
+\textbackslash、
+\^{}、\~{}
+
+\subsection{排版符}
+\S、\P、\dag、\ddag、\copyright、\pounds
+
+\subsection{标志符}
+\TeX{}、LaTeX{}、LaTeXe{}
+
+\subsection{引号}
+`abc'、``abc''
+
+\subsection{连字符}
+\par -
+\par --
+\par ---
+
+\subsection{非英文字符}
+\par \oe、\OE
+\par \ae、\AE
+\par \aa、\AA
+\par \o、\O
+\par \l、\L
+\par \ss、\SS
+\par !`、?`
+
+\subsection{重音}
+\par \`o
+\par \'o
+\par \^o
+\par \~o
+\par \=o
+\par \.o
+\par \''o
+
 
 \end{document}
